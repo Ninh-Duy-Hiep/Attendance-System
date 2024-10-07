@@ -11,13 +11,13 @@
     <main>
         <div class="sidebar">
             <img src="{{Vite::asset('resources/images/logo-sidebar.png')}}" >
-            <p>Hệ thống quản lý</p>
-            <hr style="margin: 25px 0px">
+            <h3>Hệ thống quản lý</h3>
+            <hr style="margin: 25px 0px;border:1px solid black">
             <ul>
-                <li>Quản lí tài khoản</li>
-                <li>Quản lí lịch học</li>
-                <li>Kết quả điểm danh</li>
-                <li>Hòm thư</li>
+                <li style="display: flex"><img src="{{Vite::asset('resources/images/account-management.png')}}"><p>Quản lí tài khoản</p></li>
+                <li style="display: flex"><img src="{{Vite::asset('resources/images/school-schedule.png')}}" ><p>Quản lí lịch học</p></li>
+                <li style="display: flex"><img src="{{Vite::asset('resources/images/result.png')}}" ><p>Kết quả điểm danh</p></li>
+                <li style="display: flex"><img src="{{Vite::asset('resources/images/mailbox.png')}}" ><p>Hòm thư</p></li>
             </ul>
             <form action="" method="POST">
                 @csrf
