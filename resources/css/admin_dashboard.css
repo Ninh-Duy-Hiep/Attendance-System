@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    font-family: 'Roboto',sans-serif;
+}
+
+.sidebar {
+    text-align: center;
+    background-color: #4CAFBA;   
+    height: 100vh; 
+}
+.sidebar img {
+    width: 150px;
+    margin: 35px 35px 20px 35px;
+}
+.sidebar p {
+    color: white;
+    font-size: 20px;
+}
+.sidebar ul li {
+    list-style: none;
+    color: white;
+    border: 1px ;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin: 10px 25px;
+    cursor: pointer;
+}
+.sidebar ul li:hover {
+    background-color: #198090;
+}
+.sidebar form button {
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #A2E0EC;
+    cursor: pointer;
+    margin-top: 150px;
+}
