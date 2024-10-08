@@ -26,18 +26,34 @@
         </div>
         <div class="content">
             
-            <select name="role" id="options">
-                <option value="option1">Tất cả vai trò</option>
-                <option value="option2">Giảng viên</option>
-                <option value="option3">Sinh Viên</option>
-            </select>
+            <div class="function-content">
+                <select name="role" id="options">
+                    <option value="option1">Tất cả vai trò</option>
+                    <option value="option2">Giảng viên</option>
+                    <option value="option3">Sinh Viên</option>
+                </select>
+    
+                <form action="" method="GET">
+                    @csrf
+                    <input type="text" name="find" placeholder="Tìm kiếm...">
+                </form>
+            </div>
 
-            <form action="" method="GET">
-                @csrf
-                <input type="text" name="find" placeholder="Tìm kiếm...">
-            </form>
-            
-
+            <div class="display-content">
+                <h2>Danh sách Tài khoản</h2>
+                @if($accounts->isEmpty())
+                    <p>Không có tài khoản nào.</p>
+                @else
+                    <ul>
+                        @foreach ($accounts as $account)
+                            <li>
+                                {{ $account['ho_va_ten'] }} ({{ $account['email'] }}) - 
+                                {{ $account['type'] === 'teacher' ? 'Giáo viên' : 'Sinh viên' }}
+                            </li>
+                        @endforeach
+                    </ul>
+                @endif
+            </div>
         </div>
     </main>
 </body>

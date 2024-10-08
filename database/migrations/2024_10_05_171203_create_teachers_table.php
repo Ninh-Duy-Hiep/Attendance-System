@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('so_dien_thoai',50);
             $table->string('email',50);
             $table->string('ten_dang_nhap',50);
-            $table->string('mat_khau',50);
-            $table->string('hinh_anh',50);
+            $table->string('mat_khau',255);
+            $table->string('hinh_anh',255);
             $table->string('khoa',50);
             $table->timestamps();
         });

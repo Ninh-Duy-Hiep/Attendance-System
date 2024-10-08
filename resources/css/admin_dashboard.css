@@ -49,3 +49,23 @@ main {
     margin-top: 100px;
     font-size: 15px;
 }
+.content {
+    flex: 1;
+}
+.function-content {
+    display: flex;
+    
+}
+.function-content select , .function-content form input {
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    margin: 35px 30px 30px 150px;
+}
+
+.display-content {
+    background-color: #ccc9c9;
+    width: 1200px;
+    height: 600px;
+    margin: 0px auto;
+}
