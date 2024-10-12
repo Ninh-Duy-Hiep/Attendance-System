@@ -35,7 +35,7 @@
     
                 <form action="" method="GET">
                     @csrf
-                    <input type="text" name="find" placeholder="Tìm kiếm...">
+                    <input type="text" name="find" placeholder="  Tìm kiếm...">
                 </form>
             </div>
 

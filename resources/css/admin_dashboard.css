@@ -57,15 +57,19 @@ main {
     
 }
 .function-content select , .function-content form input {
+    border: 1px solid black;
     border-radius: 5px;
     width: 200px;
     height: 35px;
     margin: 35px 30px 30px 150px;
 }
-
 .display-content {
     background-color: #ccc9c9;
     width: 1200px;
     height: 600px;
     margin: 0px auto;
+}
+
+.display-content ul li {
+    list-style: none;
 }
