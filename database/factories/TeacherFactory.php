@@ -20,9 +20,10 @@ class TeacherFactory extends Factory
             'ho_va_ten' => fake()->name(),
             'so_dien_thoai' => fake()->phoneNumber(),
             'email' => fake()->unique()->safeEmail(),
+            'ma_dinh_danh_gv' => 'GV' . fake()->unique()->randomNumber(3, true),
             'ten_dang_nhap' => fake()->unique()->userName(),
             'mat_khau' => Hash::make(fake()->password()),  // Mật khẩu ngẫu nhiên
-            'hinh_anh' => fake()->imageUrl(640, 480, 'people'),
+            'hinh_anh' => 'https://picsum.photos/640/480',
             'khoa'=> fake()->word(),
         ];
     }

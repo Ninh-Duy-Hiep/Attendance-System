@@ -61,15 +61,28 @@ main {
     border-radius: 5px;
     width: 200px;
     height: 35px;
-    margin: 35px 30px 30px 150px;
+    margin: 35px 30px 15px 150px;
 }
 .display-content {
-    background-color: #ccc9c9;
+    /* background-color: #ccc9c9; */
     width: 1200px;
     height: 600px;
     margin: 0px auto;
+    padding-top: 20px;
 }
 
-.display-content ul li {
-    list-style: none;
+.display-content table {
+    width: 1200px;
+    text-align: center;
+}
+.display-content table tr {
+    border-bottom: 1px solid #DFE2E4;
+}
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+.next-previous-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }

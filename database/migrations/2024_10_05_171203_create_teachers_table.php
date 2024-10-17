@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('ho_va_ten',50);
             $table->string('so_dien_thoai',50);
             $table->string('email',50);
+            $table->string('ma_dinh_danh_gv',10);
             $table->string('ten_dang_nhap',50);
             $table->string('mat_khau',255);
             $table->string('hinh_anh',255);
