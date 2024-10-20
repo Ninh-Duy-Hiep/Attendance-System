@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
+    // Chức năng Quản lí tài khoản
     public function index()
     {
         // Lấy tất cả giáo viên và sinh viên
@@ -41,6 +42,9 @@ class AdminController extends Controller
         $accounts = $accounts->shuffle();
 
         // Truyền dữ liệu đến view
-        return view('admin.admin_dashboard', compact('accounts'));
+        return view('admin.admin_account_management', compact('accounts'));
     }
+
+    // Chức năng Quản lí lịch học
+    
 }
