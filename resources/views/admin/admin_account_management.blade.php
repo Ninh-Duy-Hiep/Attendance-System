@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/admin_account_management.css')
+    @vite('resources/css/admin_schedule_management.css')
     <title>Trang chủ Admin</title>
 </head>
 
