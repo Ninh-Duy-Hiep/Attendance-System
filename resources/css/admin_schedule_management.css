@@ -40,6 +40,11 @@ main {
 .sidebar ul li:hover {
     background-color: #58a6b2;
 }
+.sidebar ul li a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
 .sidebar form button {
     border: none;
     border-radius: 5px;

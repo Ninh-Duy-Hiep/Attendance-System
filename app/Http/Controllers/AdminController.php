@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    // Chức năng Quản lí tài khoản
-    public function index()
+    // Quản lí tài khoản
+    public function index_account_management()
     {
         // Lấy tất cả giáo viên và sinh viên
         $teachers = Teacher::paginate(5);
@@ -45,6 +45,10 @@ class AdminController extends Controller
         return view('admin.admin_account_management', compact('accounts'));
     }
 
-    // Chức năng Quản lí lịch học
+    // Quản lí lịch học
+    public function index_schedule_management() 
+    {
+        return view('admin.admin_schedule_management');
+    }
     
 }

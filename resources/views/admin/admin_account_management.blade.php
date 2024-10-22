@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/admin_schedule_management.css')
-    <title>Trang chủ Admin</title>
+    @vite('resources/css/admin_account_management.css')
+    <title>Quản lí tài khoản</title>
 </head>
 
 <body>
@@ -16,17 +16,29 @@
             <h3>Hệ thống quản lý</h3>
             <hr style="margin: 25px 0px;border:1px solid black">
             <ul>
-                <li style="display: flex;background-color:#58a6b2;"><img src="{{Vite::asset('resources/images/account-management.png')}}">
-                    <p>Quản lí tài khoản</p>
+                <li style="background-color:#58a6b2;">
+                    <a href="{{route('admin.index_account_management')}}">
+                        <img src="{{Vite::asset('resources/images/account-management.png')}}">
+                        <p>Quản lí tài khoản</p>
+                    </a>
                 </li>
-                <li style="display: flex"><img src="{{Vite::asset('resources/images/school-schedule.png')}}">
-                    <p>Quản lí lịch học</p>
+                <li>
+                    <a href="{{route('admin.index_schedule_management')}}">
+                        <img src="{{Vite::asset('resources/images/school-schedule.png')}}">
+                        <p>Quản lí lịch học</p>
+                    </a>
                 </li>
-                <li style="display: flex"><img src="{{Vite::asset('resources/images/result.png')}}">
-                    <p>Kết quả điểm danh</p>
+                <li>
+                    <a href="">
+                        <img src="{{Vite::asset('resources/images/result.png')}}">
+                        <p>Kết quả điểm danh</p>
+                    </a>
                 </li>
-                <li style="display: flex"><img src="{{Vite::asset('resources/images/mailbox.png')}}">
-                    <p>Hòm thư</p>
+                <li>
+                    <a href="">
+                        <img src="{{Vite::asset('resources/images/mailbox.png')}}">
+                        <p>Hòm thư</p>
+                    </a>
                 </li>
             </ul>
             <form action="" method="POST">
