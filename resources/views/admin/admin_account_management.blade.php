@@ -17,25 +17,25 @@
             <hr style="margin: 25px 0px;border:1px solid black">
             <ul>
                 <li style="background-color:#58a6b2;">
-                    <a href="{{route('admin.index_account_management')}}">
+                    <a href="{{route('admin.account_management')}}">
                         <img src="{{Vite::asset('resources/images/account-management.png')}}">
                         <p>Quản lí tài khoản</p>
                     </a>
                 </li>
                 <li>
-                    <a href="{{route('admin.index_schedule_management')}}">
+                    <a href="{{route('admin.schedule_management')}}">
                         <img src="{{Vite::asset('resources/images/school-schedule.png')}}">
                         <p>Quản lí lịch học</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{route('admin.attendance_results')}}">
                         <img src="{{Vite::asset('resources/images/result.png')}}">
                         <p>Kết quả điểm danh</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{route('admin.mailbox_management')}}">
                         <img src="{{Vite::asset('resources/images/mailbox.png')}}">
                         <p>Hòm thư</p>
                     </a>
